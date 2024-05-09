@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita que aparezca una barra de desplazamiento horizontal */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Asegura que los elementos hijos respeten su posición relativa a este contenedor */
+    z-index: 1; /* Asegura que la barra de navegación esté sobre otros elementos */
+}
+
+.burger-menu {
+    display: none; /* Ocultar el botón del menú en pantallas grandes */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2; /* Asegura que el botón del menú esté sobre otros elementos */
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    z-index: 1; /* Asegura que la lista del menú esté sobre otros elementos */
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #fff;
+}
+.card1{
+    text-align:center;
+    border-radius: 30px;
+    margin-top:80px;
+    width: 300px;
+    height: 435px;
+    background-color: #A2CB7A;
+    text-color: green;
+}
+.img-card1{
+    border-radius: 25px 25px 0px 0px;
+    width:300px;
+    height:300px;
+}
+.boton-card{
+    background-color:white;
+    border:none;
+    border-radius: 25px;
+    width:75px;
+    font-size: 16px;
+}
+.main-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-items:center;
+    margin-bottom: 10px;
+}
+.acuaticas-frame{
+    margin-top: 15px;
+}
+.acuaticas-grid{
+    display: grid;
+    justify-items:center;
+}
+.acuaticas-card{
+   margin:5px;
+    border-radius: 30px;
+    height:auto;
+    background-color: #A2CB7A;
+}
+.acuaticas-card-grid{
+    margin:8px;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap:4px;
+}
+.price-column{
+    text-align: center;
+    font-size: 25px;
+    font-weight:bold;
+    
+}
+.info-column{
+    font-size: 20px;
+    
+}
+.image-column{
+    
+    width:300px;
+    height:220px;
+    border-radius:25px;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex; /* Mostrar el botón del menú en dispositivos móviles */
+    }
+
+    .menu-list {
+        display: none; /* Ocultar la lista del menú en dispositivos móviles */
+        flex-direction: column;
+        position: static;
+        top: 60px; /* Ajustar la posición para que el menú aparezca debajo de la barra de navegación */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-list a {
+        color: #fff;
+    }
+
+    .menu-list.active {
+        display: flex; /* Mostrar la lista del menú cuando está activa */
+    }
+    .card1{
+        text-align:center;
+        border-radius: 30px;
+        margin-top:80px;
+        
+        width: 200px;
+        height: 335px;
+        background-color: #A2CB7A;
+        text-color: green;
+    }
+    .img-card1{
+        border-radius: 25px 25px 0px 0px;
+        width:200px;
+        height:200px;
+    }
+    .boton-card{
+        background-color:white;
+        border:none;
+        border-radius: 25px;
+        width:75px;
+        font-size: 16px;
+    }
+    .main-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr; 
+        justify-items:center;
+    }
+    .acuaticas-frame{
+        margin-top: 15px;
+    }
+    .acuaticas-grid{
+        display: grid;
+        justify-items:center;
+    }
+    .acuaticas-card{
+       margin:5px;
+        border-radius: 30px;
+        height:auto;
+        background-color: #A2CB7A;
+    }
+    .acuaticas-card-grid{
+        margin:8px;
+        display:grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap:4px;
+    }
+    .price-column{
+        text-align: center;
+        font-size: 20px;
+        font-weight:bold;
+        padding:none;
+    }
+    .info-column{
+        font-size: 14px;
+        
+    }
+    .image-column{
+        margin:20px 5px 20px 0px;
+        width:130px;
+        height:120px;
+        border-radius:25px;
+    }
+}
