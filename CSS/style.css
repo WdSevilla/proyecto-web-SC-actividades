@@ -4,7 +4,7 @@ body {
     overflow-x: hidden; /* Evita que aparezca una barra de desplazamiento horizontal */
 }
 
-@media (min-width: 1080px) { 
+@media (min-width: 1280px) { 
 .navbar {
     background-color: #333;
     padding: 10px;
@@ -156,15 +156,15 @@ body {
     text-align:center;
     border-radius: 30px;
     margin-top:80px;
-    width: 300px;
-    height: 435px;
+    width: 250px;
+    height: 385px;
     background-color: #A2CB7A;
     text-color: green;
 }
 .img-card1{
     border-radius: 25px 25px 0px 0px;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
 }
 .boton-card{
     background-color:white;
