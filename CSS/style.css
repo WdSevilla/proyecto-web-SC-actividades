@@ -4,7 +4,7 @@ body {
     overflow-x: hidden; /* Evita que aparezca una barra de desplazamiento horizontal */
 }
 
-@media (min-width: 1025px) { 
+@media (min-width: 1080px) { 
 .navbar {
     background-color: #333;
     padding: 10px;
