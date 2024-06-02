@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burger Menu</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-  </head>
-  <style>
-    body{
-      margin: 0;
-        padding: 0;
-        background-image: url('./res/foto-superior-1.png') , url('./res/foto-superior-2.png'), url('./res/foto-inferior.png'),url('./res/foto-inferior.png'),url('./res/foto-inferior.png');
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: top left, top right, bottom, bottom left, bottom right;
-        background-attachment: fixed;
-        background-size: 20% auto, 20% auto, 50% auto,50% auto,50% auto;
-    }
 
-  
-    @media screen and (max-width: 768px) {
-    body{
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Menu</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+<style>
+  #seccion2 {
+    margin: 0;
+    padding: 0;
+    background-image: url('./res/foto-superior-1.png'), url('./res/foto-superior-2.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom, bottom left, bottom right;
+    background-attachment: fixed;
+    background-size: 20% auto, 20% auto, 50% auto, 50% auto, 50% auto;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #seccion2 {
       margin: 0;
-        padding: 0;
-        background-image: url('./res/foto-superior-1.png') , url('./res/foto-superior-2.png'), url('./res/foto-inferior.png');
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: top left, top right, bottom;
-        background-attachment: static;
-        background-size: 50% auto, 50% auto, 100% auto;
+      padding: 0;
+      background-image: url('./res/foto-superior-1.png'), url('./res/foto-superior-2.png'), url('./res/foto-inferior.png');
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: top left, top right, bottom;
+      background-attachment: static;
+      background-size: 50% auto, 50% auto, 100% auto;
     }
 
   }
-  </style>
-  <body>
+</style>
 
-    <div>
-      <nav class="navbar">
-        <div class="burger-menu" onclick="toggleMenu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <ul class="menu-list" id="menu-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="acuaticas.html">Sobre Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+<body>
+
+  <div>
+    <nav class="navbar">
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="menu-list" id="menu-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acuaticas.html">Actividades Acuaticas</a></li>
+        <li><a href="#">Hiking</a></li>
+        <li><a href="#">Horseback Riding</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="seccion1">
+    <div class="mensaje-bienvenida">
+      <p>San Carlos</p>
+      <p>Te Espera con las Mejores Experiencias</p>
     </div>
+    <video class="imagen-principal" src="./res/fortuna_vid.mp4" alt="" autoplay  muted>
+  </div>
+
+  <div id="seccion2">
+
 
     <div class="overlay">
       <div class="main-grid">
         <div class="card1">
           <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
-          <p>Raftin</p>
-          <p>Aventura en los rapidos de San Carlos</p>
-          <button class="boton-card">Info</button>
-         </div>
-      </div>
+          <div class="texto-card">
+            <p>Raftin</p>
+            <p>Aventura en los rapidos de San Carlos</p>
+            <button class="boton-card"><a style="text-decoration: none; color: black;" href="./Rafting1.html">Informacion</a></button>
+          </div>
+          
+        </div>
+          
+
+        <div class="card1">
+          <img class="img-card1" src="./res/foto-card-hiking.jpg" alt="">
+          <div class="texto-card">
+            <p>Hiking</p>
+            <p>Embárcate en una emocionante aventura a través de paisajes impresionantes y naturaleza virgen.</p>
+            <button class="boton-card"><a style="text-decoration: none; color: black;" href="">Informacion</a></button>
+          </div>
+          
+        </div>
+
+        <div class="card1">
+          <img class="img-card1" src="./res/foto-card-horse.jpg" alt="">
+          <div class="texto-card">
+            <p>Horseback Riding</p>
+            <p>Disfruta de una increíble experiencia de cabalgata en las cercanías del majestuoso Volcán Arenal</p>
+            <button class="boton-card"><a style="text-decoration: none; color: black;" href="">Informacion</a></button>
+          </div>
+          
+        </div>
+
+
+
+        </div>
 
       </div>
-     
     </div>
-
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
