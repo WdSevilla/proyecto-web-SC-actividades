@@ -14,7 +14,7 @@
     background-image: url('./res/foto-superior-1.png'), url('./res/foto-superior-2.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top left, top right, bottom, bottom left, bottom right;
-    background-attachment: fixed;
+    background-attachment: static;
     background-size: 20% auto, 20% auto, 50% auto, 50% auto, 50% auto;
   }
 
@@ -35,22 +35,17 @@
 
 <body>
 
-  <div>
+  <header>
     <nav class="navbar">
-      <div class="burger-menu" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="menu-list" id="menu-list">
+      <ul class="menu-list">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="acuaticas.html">Actividades Acuaticas</a></li>
-        <li><a href="#">Hiking</a></li>
-        <li><a href="#">Horseback Riding</a></li>
+        <li><a href="avistamiento.html">Avistamiento de aves</a></li>
+        <li><a href="#">Caminatas</a></li>
+        <li><a href="#">Cabalgata</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
-  </div>
+  </header>
 
   <div class="seccion1">
     <div class="mensaje-bienvenida">
@@ -66,22 +61,22 @@
     <div class="overlay">
       <div class="main-grid">
         <div class="card1">
-          <img class="img-card1" src="./res/foto-card1.jpg" alt="">
+          <img class="img-card1" src="./res/avistamiento1.jpeg" alt="">
           <div class="texto-card">
-            <p>Raftin</p>
-            <p>Aventura en los rapidos de San Carlos</p>
-            <button class="boton-card"><a style="text-decoration: none; color: black;" href="Rafting1.html">Informacion</a></button>
+            <p>Avistamiento de aves</p>
+            <p>Explora la naturaleza y descubre la diversidad de aves en su hábitat natural</p>
+            <a class="boton-card" style="text-decoration: none; color: black;" href="avistamientotour.html">Informacion</a>
           </div>
           
         </div>
           
 
         <div class="card1">
-          <img class="img-card1" src="./res/foto-card-hiking.jpg" alt="">
+          <img class="img-card1" src="./res/caminata2.jpeg" alt="">
           <div class="texto-card">
-            <p>Hiking</p>
+            <p>Caminata</p>
             <p>Embárcate en una emocionante aventura a través de paisajes impresionantes y naturaleza virgen.</p>
-            <button class="boton-card"><a style="text-decoration: none; color: black;" href="">Informacion</a></button>
+            <a class="boton-card" style="text-decoration: none; color: black;" href="Rafting1.html">Informacion</a>
           </div>
           
         </div>
@@ -89,14 +84,12 @@
         <div class="card1">
           <img class="img-card1" src="./res/foto-card-horse.jpg" alt="">
           <div class="texto-card">
-            <p>Horseback Riding</p>
+            <p>Cabalgata</p>
             <p>Disfruta de una increíble experiencia de cabalgata en las cercanías del majestuoso Volcán Arenal</p>
-            <button class="boton-card"><a style="text-decoration: none; color: black;" href="">Informacion</a></button>
+            <a class="boton-card" style="text-decoration: none; color: black;" href="Rafting1.html">Informacion</a>
           </div>
           
         </div>
-
-
 
         </div>
 

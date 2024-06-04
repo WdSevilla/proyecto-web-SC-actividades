@@ -52,8 +52,7 @@ body {
   color: #fff;
 }
 
-.seccion1 {
-}
+
 
 .mensaje-bienvenida {
   position: absolute;
@@ -101,6 +100,7 @@ body {
 .boton-card {
   background-color: white;
   border: none;
+  padding: 4px;
   border-radius: 25px;
   width: 105px;
   font-size: 16px;
@@ -338,7 +338,7 @@ body {
   .img-card1 {
     border-radius: 25px 0px 0px 25px;
     width: 700px;
-    height: auto;
+    height: 450px;
   }
 
   .texto-card {
@@ -400,7 +400,7 @@ body {
   }
 
   .image-column {
-    width: 100%;
+    width: 500px;
 
     height: 300px;
     border-radius: 25px;
