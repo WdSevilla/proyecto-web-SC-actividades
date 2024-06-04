@@ -63,6 +63,7 @@ body {
 }
 
 .card1 {
+  padding: 4px;
   display: flex;
   flex-direction: column;
   text-align: center;
