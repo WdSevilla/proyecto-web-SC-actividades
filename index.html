@@ -1,101 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Tigra Tours</title>
-  <link rel="stylesheet" href="./CSS/style.css" />
-</head>
-<style>
-  #seccion2 {
-    margin: 0;
-    padding: 0;
-    background-image: url('./res/foto-superior-1.png'), url('./res/foto-superior-2.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png'), url('./res/foto-inferior.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top left, top right, bottom, bottom left, bottom right;
-    background-attachment: static;
-    background-size: 20% auto, 20% auto, 50% auto, 50% auto, 50% auto;
-  }
-
-
-  @media screen and (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Tigra Tours</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <style>
     #seccion2 {
       margin: 0;
       padding: 0;
-      background-image: url('./res/foto-superior-1.png'), url('./res/foto-superior-2.png'), url('./res/foto-inferior.png');
+      background-image: url("./res/foto-superior-1.png"),
+        url("./res/foto-superior-2.png"), url("./res/foto-inferior.png"),
+        url("./res/foto-inferior.png"), url("./res/foto-inferior.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: top left, top right, bottom;
+      background-position: top left, top right, bottom, bottom left,
+        bottom right;
       background-attachment: static;
-      background-size: 50% auto, 50% auto, 100% auto;
+      background-size: 20% auto, 20% auto, 50% auto, 50% auto, 50% auto;
     }
 
-  }
-</style>
+    @media screen and (max-width: 768px) {
+      #seccion2 {
+        margin: 0;
+        padding: 0;
+        background-image: url("./res/foto-superior-1.png"),
+          url("./res/foto-superior-2.png"), url("./res/foto-inferior.png");
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: top left, top right, bottom;
+        background-attachment: static;
+        background-size: 50% auto, 50% auto, 100% auto;
+      }
+    }
+  </style>
 
-<body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="menu-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="avistamiento.html">Avistamiento de aves</a></li>
+          <li><a href="#">Caminata</a></li>
+          <li><a href="#">Cabalgata</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <nav class="navbar">
-      <ul class="menu-list">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="avistamiento.html">Avistamiento de aves</a></li>
-        <li><a href="#">Caminata</a></li>
-        <li><a href="#">Cabalgata</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="seccion1">
-    <div class="mensaje-bienvenida">
-      <p>San Carlos</p>
-      <p>Te Espera con las Mejores Experiencias</p>
+    <div class="seccion1">
+      <div class="mensaje-bienvenida">
+        <p>San Carlos</p>
+        <p>Te Espera con las Mejores Experiencias</p>
+      </div>
+      <img class="imagen-principal" src="./res/fortuna.jpg" alt="" />
     </div>
-    <img class="imagen-principal" src="./res/fortuna.jpg" alt="">
-  </div>
 
-  <div id="seccion2">
-
-
-    <div class="overlay">
-      <div class="main-grid">
-        <div class="card1">
-          <img class="img-card1" src="./res/avistamiento1.jpeg" alt="">
-          <div class="texto-card">
-            <p>Avistamiento de aves</p>
-            <p>Explora la naturaleza y descubre la diversidad de aves en su hábitat natural</p>
-            <a class="boton-card" style="text-decoration: none; color: black;" href="avistamientotour.html">Informacion</a>
+    <div id="seccion2">
+      <div class="overlay">
+        <div class="main-grid">
+          <div class="card1">
+            <img class="img-card1" src="./res/avistamiento1.jpeg" alt="" />
+            <div class="texto-card">
+              <p>Avistamiento de aves</p>
+              <p>
+                Explora la naturaleza y descubre la diversidad de aves en su
+                hábitat natural
+              </p>
+              <a
+                class="boton-card"
+                style="text-decoration: none; color: black"
+                href="avistamientotour.html"
+                >Informacion</a
+              >
+            </div>
           </div>
-          
-        </div>
-          
 
-        <div class="card1">
-          <img class="img-card1" src="./res/caminata2.jpeg" alt="">
-          <div class="texto-card">
-            <p>Caminata</p>
-            <p>Embárcate en una emocionante aventura a través de paisajes impresionantes y naturaleza virgen.</p>
-            <a class="boton-card" style="text-decoration: none; color: black;" href="Rafting1.html">Informacion</a>
+          <div class="card1">
+            <img class="img-card1" src="./res/caminata2.jpeg" alt="" />
+            <div class="texto-card">
+              <p>Caminata</p>
+              <p>
+                Embárcate en una emocionante aventura a través de paisajes
+                impresionantes y naturaleza virgen.
+              </p>
+              <a
+                class="boton-card"
+                style="text-decoration: none; color: black"
+                href="Rafting1.html"
+                >Informacion</a
+              >
+            </div>
           </div>
-          
-        </div>
 
-        <div class="card1">
-          <img class="img-card1" src="./res/cabalgata1.jpeg" alt="">
-          <div class="texto-card">
-            <p>Cabalgata</p>
-            <p>Disfruta de una increíble experiencia de cabalgata en las cercanías del majestuoso Volcán Arenal</p>
-            <a class="boton-card" style="text-decoration: none; color: black;" href="Rafting1.html">Informacion</a>
+          <div class="card1">
+            <img class="img-card1" src="./res/cabalgata1.jpeg" alt="" />
+            <div class="texto-card">
+              <p>Cabalgata</p>
+              <p>
+                Disfruta de una increíble experiencia de cabalgata en las
+                cercanías del majestuoso Volcán Arenal
+              </p>
+              <a
+                class="boton-card"
+                style="text-decoration: none; color: black"
+                href="Rafting1.html"
+                >Informacion</a
+              >
+            </div>
           </div>
-          
         </div>
-
-        </div>
-
       </div>
     </div>
-   
-</body>
-
+  </body>
 </html>

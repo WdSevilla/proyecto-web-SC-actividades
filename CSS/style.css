@@ -64,14 +64,14 @@ body {
 }
 
 .card1 {
-  
   display: flex;
   flex-direction: column;
   text-align: center;
   border-radius: 30px;
   margin-top: 30px;
   background-color: rgb(84, 144, 86);
-  text-anchor: rgb(248, 250, 248);
+  color: rgb(248, 250, 248);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra alrededor de la tarjeta */
 }
 
 .img-card1 {
@@ -88,10 +88,23 @@ body {
 .boton-card {
   background-color: white;
   border: none;
-  padding: 4px;
+  padding: 10px;
   border-radius: 25px;
   width: 105px;
   font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para el hover */
+}
+
+.boton-card:hover {
+  transform: translateY(-2px); /* Levantar el botón ligeramente al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.boton-card:active {
+  transform: translateY(0); /* Volver a la posición original al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Volver a la sombra original al hacer clic */
 }
 
 .main-grid {
