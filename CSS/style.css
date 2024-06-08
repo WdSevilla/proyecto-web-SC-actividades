@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "Jungle";
-    src: url("../fonts/JungleFeverNF.otf");
+  font-family: "Jungle";
+  src: url("../fonts/JungleFeverNF.otf");
 }
-
 
 body {
   margin: 0;
@@ -21,7 +20,7 @@ body {
 
 .menu-list {
   font-size: 13px;
-  font-weight:bolder;
+  font-weight: bolder;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,27 +37,25 @@ body {
   color: #fff;
 }
 
-
-
 .mensaje-bienvenida {
   position: absolute;
   top: 14%;
   left: 18%;
 }
 
-
 .mensaje-bienvenida p {
-    margin: 0;
-    font-family: Jungle;
-    color: white;
-    font-size: 28px;
-  }
+  margin: 0;
+  font-family: Jungle;
+  color: white;
+  font-size: 28px;
+}
 
-  .mensaje-bienvenida p + p {
-    color: white;
-    font-family: Jungle;
-    font-size: 14px;
-  }
+.mensaje-bienvenida p + p {
+  color: white;
+  font-family: Jungle;
+  font-size: 14px;
+}
+
 .imagen-principal {
   width: 100%;
 }
@@ -107,7 +104,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Volver a la sombra original al hacer clic */
 }
 
-.main-grid {
+.contenedor-principal {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -115,47 +112,47 @@ body {
   padding: 4px;
 }
 
-.acuaticas-frame {
+.contenedor-actividades {
   margin-top: 15px;
 }
 
-.acuaticas-grid {
+.actividades-grid {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
 }
 
-.acuaticas-card {
+.actividades-card {
   margin: 5px;
   border-radius: 30px;
   height: auto;
   background-color: #a2cb7a;
 }
 
-.acuaticas-card-grid {
+.actividades-card-grid {
   margin: 8px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 4px;
 }
 
-.price-column {
+.precio {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
 }
 
-.info-column {
+.info {
   font-size: 20px;
 }
 
-.image-column {
+.imagen-actividad-card {
   width: 100%;
   height: auto;
   border-radius: 25px;
 }
 
-.main-container-reservas {
+.contenedor-reservas {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -169,28 +166,19 @@ body {
 .galeria-container2 {
   margin-top: 4px;
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
 
-.primer-foto {
+.primer-foto, .segunda-foto, .tercera-foto {
   width: 100%;
   height: auto;
 }
 
-.segunda-foto {
-  width: 100%;
-  height: auto;
+.texto-tour {
+  padding: 4px;
 }
 
-.tercera-foto {
-  width: 100%;
-  height: auto;
-}
-.texto-tour{
-  padding:4px;
-}
 footer {
   background-color: rgb(34, 109, 183);
   color: white;
@@ -221,289 +209,133 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    position: relative; /* Asegura que los elementos hijos respeten su posición relativa a este contenedor */
-    z-index: 1; /* Asegura que la barra de navegación esté sobre otros elementos */
-  }
-
-  .burger-menu {
-    display: none; /* Ocultar el botón del menú en pantallas grandes */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 2; /* Asegura que el botón del menú esté sobre otros elementos */
-  }
-
-  .line {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-  }
-
-  .menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    z-index: 1; /* Asegura que la lista del menú esté sobre otros elementos */
-  }
-
-  .menu-list li {
-    margin-right: 20px;
-  }
-
-  .menu-list a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .mensaje-bienvenida {
-    top: 40%;
-    left: 10%;
-  }
-
-  .mensaje-bienvenida p {
-    font-size: 80px;
-  }
-
-  .mensaje-bienvenida p + p {
-    font-size: 40px;
-  }
-
-  .card1 {
-    flex-direction: row;
-  }
-
-  .img-card1 {
-    border-radius: 25px 0 0 25px;
-    width: 50%;
-    height: auto;
-  }
-
-  .texto-card {
-    width: 50%;
-    padding: 10%;
-  }
-
-  .acuaticas-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .acuaticas-card-grid {
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  .main-container-reservas {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .galeria-container2 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-
+/* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
   .burger-menu {
-    display: none;
+      display: none;
   }
 
   .navbar {
-
-    background-color: rgb(34, 109, 183);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
+      padding: 10px;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
   }
 
   .menu-list {
-    font-size: 16px;
-    display: flex;
+      font-size: 16px;
+      display: flex;
   }
 
   .menu-list li {
-    margin-right: 20px;
+      margin-right: 20px;
   }
 
   .menu-list a {
-    text-decoration: none;
-    color: #fff;
+      text-decoration: none;
+      color: #fff;
   }
 
   .mensaje-bienvenida {
-    position: absolute;
-    top: 30%;
-    left: 30%;
+      top: 30%;
+      left: 30%;
   }
 
   .mensaje-bienvenida p {
-    margin: 0;
-    font-family: Jungle;
-    color: white;
-    font-size: 120px;
+      font-size: 120px;
   }
 
   .mensaje-bienvenida p + p {
-    color: white;
-    font-family: Jungle;
-    font-size: 50px;
+      font-size: 50px;
   }
 
   .imagen-principal {
-    width: 100%;
-    height: 900px;
-    
+      height: 900px;
   }
 
   .card1 {
-    display: flex;
-    
-    text-align: center;
-    border-radius: 30px;
-    margin-top: 30px;
-    background-color: rgb(34, 109, 183);
-    text-anchor: rgb(248, 250, 248);
+      flex-direction: row;
+      margin-top: 30px;
+      background-color: rgb(34, 109, 183);
   }
 
   .img-card1 {
-    border-radius: 25px 0px 0px 25px;
-    width: 700px;
-    height: 450px;
+      border-radius: 25px 0 0 25px;
+      width: 700px;
+      height: 450px;
   }
 
   .texto-card {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 400px;
-    font-size: 20px;
-    padding-top: 10%;
-    padding-left: 10px;
-    padding-right: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 400px;
+      font-size: 20px;
+      padding-top: 10%;
+      padding-left: 10px;
+      padding-right: 10px;
   }
 
   .boton-card {
-    background-color: white;
-    border: none;
-    border-radius: 25px;
-    width: 105px;
-    font-size: 16px;
+      border-radius: 25px;
+      width: 105px;
+      font-size: 16px;
   }
 
-  .main-grid {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 10px;
+  .contenedor-principal {
+      padding-bottom: 10px;
   }
 
-  .acuaticas-frame {
-    margin-top: 15px;
+  .contenedor-actividades {
+      margin-top: 15px;
   }
 
-  .acuaticas-grid {
-    display: grid;
-    justify-items: center;
+  .actividades-grid {
+      justify-items: center;
   }
 
-  .acuaticas-card {
-    margin: 5px;
-    border-radius: 30px;
-    height: auto;
-    background-color: #a2cb7a;
+  .actividades-card {
+      border-radius: 30px;
+      height: auto;
+      background-color: #a2cb7a;
   }
 
-  .acuaticas-card-grid {
-    margin: 8px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 4px;
+  .actividades-card-grid {
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 4px;
   }
 
-  .price-column {
-    padding-top: 10%;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+  .precio {
+      padding-top: 10%;
   }
 
-  .info-column {
-    font-size: 20px;
+  .info {
+      font-size: 20px;
   }
 
-  .image-column {
-    width: 500px;
-
-    height: 300px;
-    border-radius: 25px;
+  .imagen-actividad-card {
+      width: 500px;
+      height: 300px;
+      border-radius: 25px;
   }
 
-  .main-container-reservas {
-    display: grid;
-    grid-template-columns:35% 65%;
-    height:fit-content;
+  .contenedor-reservas {
+      grid-template-columns: 35% 65%;
+      height: fit-content;
   }
 
   .galeria-container {
-    padding: 20px;
-    display: grid;
-    grid-template-rows:50% ;
+      grid-template-rows: 50%;
   }
 
   .galeria-container2 {
-    margin-top: 4px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 5px;
+      grid-template-columns: 50% 50%;
+      gap: 5px;
   }
 
-  .primer-foto {
-    width: 100%;
-    height: 100%;
+  .primer-foto, .segunda-foto, .tercera-foto {
+      height: 100%;
   }
 
-  .segunda-foto {
-    width: 100%;
-    height: 85%;
-  }
-
-  .tercera-foto {
-    width: 100%;
-    height: 85%;
-  }
   footer {
-    background-color: rgb(34, 109, 183);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position:static;
-    width: 100%;
-    bottom: 0;
+      position: static;
   }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  
-  .footer-links {
-    margin-top: 10px;
-  }
-  
-  .footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
 }
